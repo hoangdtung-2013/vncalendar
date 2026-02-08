@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "vncalendar"
-version = "0.1.0"
+version = "1.0"
 description = "Thư viện Python tính lịch Âm – Dương, Can Chi và ngày tốt xấu theo lịch Việt Nam"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.7"
 authors = [
     {name = "Hoang Duc Tung", email = "hoangdtung2021@gmail.com"}
 ]
