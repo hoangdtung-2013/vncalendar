@@ -95,10 +95,30 @@ The library is built based on:
     print(VanSu.TotXau.isNguyetPha(27, 12, 2025)) # True
     ```
   - Sat Chu    (Sát Chủ)
+    ```python
+    from vncalendar import VanSu
+    print(VanSu.TotXau.isSatChu(8, 1, 2026)) # True
+    ```
   - Tho Tu     (Thọ Tử/Thụ tử)
+    ```python
+    from vncalendar import VanSu
+    print(VanSu.TotXau.isThoTu(1, 1, 2026)) # True
+    ```
   - Vang Vong  (Vãng Vong)
+    ```python
+    from vncalendar import VanSu
+    print(VanSu.TotXau.isVangVong(17, 1, 2026)) # True
+    ```
   - Nguyet Ky  (Nguyệt Kỵ)
+    ```python
+    from vncalendar import VanSu
+    print(VanSu.TotXau.isNguyetKy(23, 1, 2026)) # True
+    ```
   - Dai Bai    (Đại Bại)
+    ```python
+    from vncalendar import VanSu
+    print(VanSu.TotXau.isDaiBai(21, 3, 2026)) # True
+    ```
 - Determination of auspicious hours (Gio Hoang Dao)
 
 ### 2.5. Solar Terms
