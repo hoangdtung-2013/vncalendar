@@ -372,18 +372,18 @@ class VanSu:
             isLeap = 1 if yl % 19 in [0, 3, 6, 9, 11, 14, 17] else 0
             ds, ms, ys = VanSu.SolarAndLunar.convertLunar2Solar(dl, ml, yl, isLeap)
             canchi = VanSu.CanChi.ngay(ds, ms, ys)
-            if VanSu.CanChi.nam(yl) in ['Giáp', 'Kỷ']:
+            if VanSu.CanChi.nam(yl).split()[0] in ['Giáp', 'Kỷ']:
                 dbgk = {3: 'Mậu Tuất', 7: 'Qúy Hợi',
                         10: 'Bính Thân', 11: 'Đinh Hợi'
                         }
                 return canchi == dbgk[ml]
-            elif VanSu.CanChi.nam(yl) in ['Ất', 'Canh']:
+            elif VanSu.CanChi.nam(yl).split()[0] in ['Ất', 'Canh']:
                 dbac = {4: 'Nhâm Thân', 9: 'Ất Tị'}
                 return canchi == dbac[ml]
-            elif VanSu.CanChi.nam(yl) in ['Bính', 'Tân']:
+            elif VanSu.CanChi.nam(yl).split()[0] in ['Bính', 'Tân']:
                 dbbt = {3: 'Tân Tị', 9: 'Canh Thìn'}
                 return canchi == dbbt[ml]
-            elif VanSu.CanChi.nam(yl) in ['Mậu', 'Qúy']:
+            elif VanSu.CanChi.nam(yl).split()[0] in ['Mậu', 'Qúy']:
                 return canchi == 'Kỷ Sửu'
             return False
         
