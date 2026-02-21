@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+vncalendar/__init__.py
+vncalendar/main.py
+vncalendar.egg-info/PKG-INFO
+vncalendar.egg-info/SOURCES.txt
+vncalendar.egg-info/dependency_links.txt
+vncalendar.egg-info/top_level.txt
