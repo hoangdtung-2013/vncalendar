@@ -1358,6 +1358,7 @@ class Person:
             'Khai' : 'Trực Khai sinh thuận giống vàng mười\nHọc giỏi, thông minh thích nói cười\nTrai đỗ cao sang gái phận mỏng\nChồng ghen còn khổ kém vui tươi.',
             'Bế'   : 'Trực Bế bốn bên đóng lại rồi\nMột mình tự lập, tự mình thôi\nTính Hỏa nên thường nổi giận\nDang dở công danh lẫn lứa đôi.'
         }
+        yl = SolarAndLunar.convertSolar2Lunar(self.bday, self.bmon, self.byr)[2]
         ccn = CanChi.nam(yl)
         for truc, ds in tempdict.items():
             if ccn in ds:
@@ -1384,5 +1385,6 @@ class Person:
             'Thái Âm'   : 'Sao chủ sự toại nguyện về danh lợi. Nữ phòng ốm đau, tật ách, sản nạn.',
             'Mộc Đức'   : 'Sao chủ hướng tới sự an vui hòa hợp.'
         }
-        sao = TotXau.getCuuDieu(yl, gen)
+        yl = SolarAndLunar.convertSolar2Lunar(self.bday, self.bmon, self.byr)[2]
+        sao = TotXau.getCuuDieu(yl, self.gen)
         return PRED9[sao] if sao in PRED9.keys() else None
