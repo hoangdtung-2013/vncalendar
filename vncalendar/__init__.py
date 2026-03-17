@@ -1,2 +1,12 @@
-from .main import Date, VanSu
-__all__ = ["Date", "VanSu"]
+from main import Date, SolarAndLunar, CanChi, TotXau, TietKhi, VanSu, Stars, Person
+__all__ = [
+    'Date',
+    'SolarAndLunar',
+    'CanChi',
+    'TotXau',
+    'TietKhi',
+    'VanSu',
+    'Stars',
+    'Person',
+    ]
+
